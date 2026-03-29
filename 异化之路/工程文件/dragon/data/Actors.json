@@ -1,8 +1,8 @@
 [
 null,
-{"id":1,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[2,0,0,3,0],"faceIndex":0,"faceName":"CharacterFace_1","traits":[],"initialLevel":1,"maxLevel":99,"name":"主角","nickname":"","note":"<Battle Portrait: /Portraits/SwordMan>","profile":""},
-{"id":2,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
-{"id":3,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":1,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[2,0,0,3,0],"faceIndex":0,"faceName":"CharacterFace_1","traits":[],"initialLevel":1,"maxLevel":99,"name":"主角1","nickname":"","note":"<Battle Portrait: /Portraits/SwordMan>","profile":""},
+{"id":2,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[2,0,0,3,0],"faceIndex":0,"faceName":"CharacterFace_1","traits":[],"initialLevel":1,"maxLevel":99,"name":"主角2","nickname":"","note":"<Battle Portrait: /Portraits/SwordMan>","profile":""},
+{"id":3,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[2,0,0,3,0],"faceIndex":0,"faceName":"CharacterFace_1","traits":[],"initialLevel":1,"maxLevel":99,"name":"主角3","nickname":"","note":"<Battle Portrait: /Portraits/SwordMan>","profile":""},
 {"id":4,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
 {"id":5,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
 {"id":6,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
