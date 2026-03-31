@@ -16,5 +16,6 @@ var $plugins =
 {"name":"zz_ActorCmdWindowAbsPos","status":true,"description":"(post-VisuMZ) Actor command window absolute position controller","parameters":{"AbsX":"30","AbsY":"500"}},
 {"name":"zz_ActorCmdWindowHeightFromMaxRows","status":true,"description":"(post-VisuMZ) Set Actor Command Window height from VisuMZ_3_FrontviewBattleUI MaxRows","parameters":{"FallbackRows":"10"}},
 {"name":"zz_FvUiFixedCenterSpacing","status":true,"description":"(post-VisuMZ) Frontview Status UI：居中布局时固定相邻队员中心距","parameters":{"Enabled":"true","CenterSpacing":"405"}},
-{"name":"zz_BattleCustomBackAttachment","status":false,"description":"(post-VisuMZ) 战斗场景自定义背面装饰图：中心锚点 + 游戏区域坐标","parameters":{"Enabled":"true","Filename":"frame3","CustomX":"960","CustomY":"930","Opacity":"255"}}
+{"name":"zz_BattleCustomBackAttachment","status":false,"description":"(post-VisuMZ) 战斗场景自定义背面装饰图：中心锚点 + 游戏区域坐标","parameters":{"Enabled":"true","Filename":"frame3","CustomX":"960","CustomY":"930","Opacity":"255"}},
+{"name":"zz_TextToVar","status":true,"description":"通过插件指令设置文本，并可展开控制符后写入变量","parameters":{}}
 ];
