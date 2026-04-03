@@ -7,6 +7,7 @@ const stage_draw_ui_info = {
     "mapframe":4,
     "character_bottom_frame":5,
     "topframe":6,
+    "dialog_frame":7,
 };
 ///代入变量ID2
 $gameVariables.setValue(2, stage_draw_ui_info);

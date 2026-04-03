@@ -16,3 +16,6 @@ const bg_small_x = 960;
 const bg_small_y = 450;
 $gameScreen.showPicture(bg_small_id, bg_small_name, 1, bg_small_x, bg_small_y, 100, 100, 255, 0);
 
+///根据关卡ID设置战斗背景
+const battle_bg_name = "bg"+stage_id;
+$gameMap.changeBattleback(battle_bg_name, "");

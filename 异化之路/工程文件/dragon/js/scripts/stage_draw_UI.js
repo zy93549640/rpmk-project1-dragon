@@ -16,13 +16,13 @@ const mapframe_y = 450;
 $gameScreen.showPicture(mapframe_id, mapframe_name, 1, mapframe_x, mapframe_y, 100, 100, 255, 0);
 
 
-// ///绘制角色底框
-const character_bottom_frame_id = stage_draw_ui_info.character_bottom_frame;
-const character_bottom_frame_name = "character_bottom_frame";
-const character_bottom_frame_x = 960;
-const character_bottom_frame_y = 930;
-$gameScreen.showPicture(character_bottom_frame_id, character_bottom_frame_name, 
-    1, character_bottom_frame_x, character_bottom_frame_y, 100, 100, 255, 0);
+// // ///绘制角色底框
+// const character_bottom_frame_id = stage_draw_ui_info.character_bottom_frame;
+// const character_bottom_frame_name = "character_bottom_frame";
+// const character_bottom_frame_x = 960;
+// const character_bottom_frame_y = 930;
+// $gameScreen.showPicture(character_bottom_frame_id, character_bottom_frame_name, 
+//     1, character_bottom_frame_x, character_bottom_frame_y, 100, 100, 255, 0);
 
 ///绘制顶部UI框
 const topframe_id = stage_draw_ui_info.topframe;
@@ -30,3 +30,10 @@ const topframe_name = "topframe";
 const topframe_x = 0;
 const topframe_y = 0;
 $gameScreen.showPicture(topframe_id, topframe_name, 0, topframe_x, topframe_y, 100, 100, 255, 0);
+
+///绘制对话框
+const dialog_frame_id = stage_draw_ui_info.dialog_frame;
+const dialog_frame_name = "dialog_frame";
+const dialog_frame_x = 960;
+const dialog_frame_y = 650;
+$gameScreen.showPicture(dialog_frame_id, dialog_frame_name, 1, dialog_frame_x, dialog_frame_y, 100, 100, 255, 0);
