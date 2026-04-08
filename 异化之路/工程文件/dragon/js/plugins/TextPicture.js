@@ -60,6 +60,21 @@
         textPictureText = String(args.text);
     });
 
+    // Expose a script-callable API for setting the next text picture.
+    // Usage:
+    //   TextPicture.setText("Hello");
+    //   $gameScreen.showPicture(id, "", origin, x, y, sx, sy, opacity, blendMode);
+    globalThis.TextPicture = globalThis.TextPicture || {};
+    globalThis.TextPicture.setText = function(text) {
+        textPictureText = String(text ?? "");
+    };
+    globalThis.TextPicture.getText = function() {
+        return textPictureText;
+    };
+    globalThis.TextPicture.clear = function() {
+        textPictureText = "";
+    };
+
     const _Game_Picture_show = Game_Picture.prototype.show;
     Game_Picture.prototype.show = function() {
         _Game_Picture_show.apply(this, arguments);

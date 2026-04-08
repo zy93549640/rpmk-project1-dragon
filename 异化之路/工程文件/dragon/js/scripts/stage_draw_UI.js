@@ -1,5 +1,4 @@
 ///本脚本为绘制固定的UI图片
-
 const stage_draw_ui_info = $gameVariables.value(2);
 
 ///绘制背景的阴影层
@@ -15,15 +14,6 @@ const mapframe_x = 960;
 const mapframe_y = 450;
 $gameScreen.showPicture(mapframe_id, mapframe_name, 1, mapframe_x, mapframe_y, 100, 100, 255, 0);
 
-
-// // ///绘制角色底框
-// const character_bottom_frame_id = stage_draw_ui_info.character_bottom_frame;
-// const character_bottom_frame_name = "character_bottom_frame";
-// const character_bottom_frame_x = 960;
-// const character_bottom_frame_y = 930;
-// $gameScreen.showPicture(character_bottom_frame_id, character_bottom_frame_name, 
-//     1, character_bottom_frame_x, character_bottom_frame_y, 100, 100, 255, 0);
-
 ///绘制顶部UI框
 const topframe_id = stage_draw_ui_info.topframe;
 const topframe_name = "topframe";
@@ -37,3 +27,25 @@ const dialog_frame_name = "dialog_frame";
 const dialog_frame_x = 960;
 const dialog_frame_y = 650;
 $gameScreen.showPicture(dialog_frame_id, dialog_frame_name, 1, dialog_frame_x, dialog_frame_y, 100, 100, 255, 0);
+
+///绘制设置图标
+const icon_setting_id = stage_draw_ui_info.icon_setting;
+const icon_setting_name = "icon/setting";
+//在屏幕的右上角
+const icon_setting_x = Graphics.width - 115;
+const icon_setting_y = 55;
+$gameScreen.showPicture(icon_setting_id, icon_setting_name, 1, icon_setting_x, icon_setting_y, 100, 100, 255, 0);
+
+///绘制队伍图标
+const icon_party_id = stage_draw_ui_info.icon_party;
+const icon_party_name = "icon/party";
+const icon_party_x = Graphics.width - 320;
+const icon_party_y = 55;
+$gameScreen.showPicture(icon_party_id, icon_party_name, 1, icon_party_x, icon_party_y, 100, 100, 255, 0);
+
+///绘制地图图标
+const icon_map_id = stage_draw_ui_info.icon_map;
+const icon_map_name = "icon/map";
+const icon_map_x = Graphics.width - 525;
+const icon_map_y = 55;
+$gameScreen.showPicture(icon_map_id, icon_map_name, 1, icon_map_x, icon_map_y, 100, 100, 255, 0);
