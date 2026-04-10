@@ -11,6 +11,7 @@ const stage_draw_ui_info = {
     "icon_party":9,
     "icon_map":10,
     "map_name":11,
+    "dialog_text":12,
 };
 ///代入变量ID2
 $gameVariables.setValue(2, stage_draw_ui_info);
