@@ -1,0 +1,182 @@
+[
+  {
+    "name": "00_clean_panel_background_frame",
+    "box": [
+      24,
+      24,
+      1020,
+      1230
+    ],
+    "mode": "clean_panel",
+    "tight_path": "/mnt/data/final_ui_components_png/00_clean_panel_background_frame.png",
+    "full_path": "/mnt/data/final_ui_components_layers/00_clean_panel_background_frame.png"
+  },
+  {
+    "name": "01_top_skull_emblem",
+    "box": [
+      382,
+      92,
+      668,
+      333
+    ],
+    "mode": "icon_soft",
+    "tight_path": "/mnt/data/final_ui_components_png/01_top_skull_emblem.png",
+    "full_path": "/mnt/data/final_ui_components_layers/01_top_skull_emblem.png"
+  },
+  {
+    "name": "02_title_text_elite_battle",
+    "box": [
+      382,
+      347,
+      670,
+      424
+    ],
+    "mode": "text",
+    "tight_path": "/mnt/data/final_ui_components_png/02_title_text_elite_battle.png",
+    "full_path": "/mnt/data/final_ui_components_layers/02_title_text_elite_battle.png"
+  },
+  {
+    "name": "03_subtitle_high_risk_reward",
+    "box": [
+      249,
+      451,
+      802,
+      517
+    ],
+    "mode": "text",
+    "tight_path": "/mnt/data/final_ui_components_png/03_subtitle_high_risk_reward.png",
+    "full_path": "/mnt/data/final_ui_components_layers/03_subtitle_high_risk_reward.png"
+  },
+  {
+    "name": "04_middle_divider_ornament",
+    "box": [
+      126,
+      548,
+      924,
+      584
+    ],
+    "mode": "goldline",
+    "tight_path": "/mnt/data/final_ui_components_png/04_middle_divider_ornament.png",
+    "full_path": "/mnt/data/final_ui_components_layers/04_middle_divider_ornament.png"
+  },
+  {
+    "name": "05_description_text",
+    "box": [
+      259,
+      623,
+      794,
+      860
+    ],
+    "mode": "text",
+    "tight_path": "/mnt/data/final_ui_components_png/05_description_text.png",
+    "full_path": "/mnt/data/final_ui_components_layers/05_description_text.png"
+  },
+  {
+    "name": "06_reward_label_and_dividers",
+    "box": [
+      108,
+      888,
+      944,
+      938
+    ],
+    "mode": "goldline",
+    "tight_path": "/mnt/data/final_ui_components_png/06_reward_label_and_dividers.png",
+    "full_path": "/mnt/data/final_ui_components_layers/06_reward_label_and_dividers.png"
+  },
+  {
+    "name": "07_reward_card_limb",
+    "box": [
+      117,
+      978,
+      302,
+      1160
+    ],
+    "mode": "rect",
+    "tight_path": "/mnt/data/final_ui_components_png/07_reward_card_limb.png",
+    "full_path": "/mnt/data/final_ui_components_layers/07_reward_card_limb.png"
+  },
+  {
+    "name": "08_reward_card_skull",
+    "box": [
+      326,
+      976,
+      511,
+      1160
+    ],
+    "mode": "rect",
+    "tight_path": "/mnt/data/final_ui_components_png/08_reward_card_skull.png",
+    "full_path": "/mnt/data/final_ui_components_layers/08_reward_card_skull.png"
+  },
+  {
+    "name": "09_reward_card_scroll",
+    "box": [
+      536,
+      978,
+      722,
+      1160
+    ],
+    "mode": "rect",
+    "tight_path": "/mnt/data/final_ui_components_png/09_reward_card_scroll.png",
+    "full_path": "/mnt/data/final_ui_components_layers/09_reward_card_scroll.png"
+  },
+  {
+    "name": "10_reward_card_coin",
+    "box": [
+      746,
+      975,
+      933,
+      1160
+    ],
+    "mode": "rect",
+    "tight_path": "/mnt/data/final_ui_components_png/10_reward_card_coin.png",
+    "full_path": "/mnt/data/final_ui_components_layers/10_reward_card_coin.png"
+  },
+  {
+    "name": "extra_reward_icon_limb",
+    "box": [
+      139,
+      1001,
+      281,
+      1137
+    ],
+    "mode": "icon_soft",
+    "tight_path": "/mnt/data/final_ui_components_png/extra_reward_icon_limb.png",
+    "full_path": "/mnt/data/final_ui_components_layers/extra_reward_icon_limb.png"
+  },
+  {
+    "name": "extra_reward_icon_skull",
+    "box": [
+      360,
+      996,
+      485,
+      1137
+    ],
+    "mode": "icon_soft",
+    "tight_path": "/mnt/data/final_ui_components_png/extra_reward_icon_skull.png",
+    "full_path": "/mnt/data/final_ui_components_layers/extra_reward_icon_skull.png"
+  },
+  {
+    "name": "extra_reward_icon_scroll",
+    "box": [
+      572,
+      1002,
+      689,
+      1129
+    ],
+    "mode": "icon_soft",
+    "tight_path": "/mnt/data/final_ui_components_png/extra_reward_icon_scroll.png",
+    "full_path": "/mnt/data/final_ui_components_layers/extra_reward_icon_scroll.png"
+  },
+  {
+    "name": "extra_reward_icon_coin",
+    "box": [
+      777,
+      1004,
+      903,
+      1130
+    ],
+    "mode": "icon_soft",
+    "tight_path": "/mnt/data/final_ui_components_png/extra_reward_icon_coin.png",
+    "full_path": "/mnt/data/final_ui_components_layers/extra_reward_icon_coin.png"
+  }
+]

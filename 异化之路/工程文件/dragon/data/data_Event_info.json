@@ -1,0 +1,9 @@
+{
+  "1": {"name":"普通战斗","event_icon":"event/NormalBattle_card","description":"待定"},
+  "2": {"name":"精英战斗","event_icon":"event/EliteBattle_card","description":"待定"},
+  "3": {"name":"随机事件","event_icon":"event/RandomEvent_card","description":"待定"},
+  "4": {"name":"商店","event_icon":"event/Shop_card","description":"待定"},
+  "5": {"name":"篝火","event_icon":"event/Rest_card","description":"待定"},
+  "6": {"name":"终战","event_icon":"event/BossBattle_card","description":"待定"}
+}
+
