@@ -1,5 +1,5 @@
 ///本脚本为绘制固定的UI图片
-const stage_draw_ui_info = $gameVariables.value(2);
+const stage_draw_ui_info = $dataUIinfo.stage;
 
 ///绘制背景的阴影层
 const bg_shadow_id = stage_draw_ui_info.bg_shadow;
@@ -9,7 +9,7 @@ $gameScreen.showPicture(bg_shadow_id, bg_shadow_name, 0, 0, 0, 100, 100, 255, 2)
 
 ///绘制地图框
 const mapframe_id = stage_draw_ui_info.mapframe;
-const mapframe_name = "mapframe";
+const mapframe_name = "mapframe2";
 const mapframe_x = 960;
 const mapframe_y = 450;
 $gameScreen.showPicture(mapframe_id, mapframe_name, 1, mapframe_x, mapframe_y, 100, 100, 255, 0);
@@ -21,12 +21,20 @@ const topframe_x = 0;
 const topframe_y = 0;
 $gameScreen.showPicture(topframe_id, topframe_name, 0, topframe_x, topframe_y, 100, 100, 255, 0);
 
-///绘制对话框
-const dialog_frame_id = stage_draw_ui_info.dialog_frame;
-const dialog_frame_name = "dialog_frame";
-const dialog_frame_x = 960;
-const dialog_frame_y = 650;
-$gameScreen.showPicture(dialog_frame_id, dialog_frame_name, 1, dialog_frame_x, dialog_frame_y, 100, 100, 255, 0);
+///绘制角色的底框
+const character_bottom_frame_id = stage_draw_ui_info.character_bottom_frame;
+const character_bottom_frame_name = "character_bottom_frame";
+///x为中心点，y为931，原点为中心点
+const character_bottom_frame_x = 960;
+const character_bottom_frame_y = 931;
+$gameScreen.showPicture(character_bottom_frame_id, character_bottom_frame_name, 1, character_bottom_frame_x, character_bottom_frame_y, 100, 100, 255, 0);
+
+// ///绘制对话框
+// const dialog_frame_id = stage_draw_ui_info.dialog_frame;
+// const dialog_frame_name = "dialog_frame";
+// const dialog_frame_x = 960;
+// const dialog_frame_y = 650;
+// $gameScreen.showPicture(dialog_frame_id, dialog_frame_name, 1, dialog_frame_x, dialog_frame_y, 100, 100, 255, 0);
 
 ///绘制设置图标
 const icon_setting_id = stage_draw_ui_info.icon_setting;

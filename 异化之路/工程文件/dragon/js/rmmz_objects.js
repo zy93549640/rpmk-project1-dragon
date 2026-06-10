@@ -6038,6 +6038,7 @@ Game_Troop.prototype.increaseTurn = function() {
         }
     }
     this._turnCount++;
+    console.log("当前战斗回合数： " + this._turnCount);
 };
 
 Game_Troop.prototype.expTotal = function() {

@@ -10,11 +10,12 @@
  * @help ButtonPicture.js
  *
  * This plugin provides a command to call a common event when a picture is
- * clicked.
+ * clicked. On click, game variable #1 is set to the clicked picture number.
  *
  * Use it in the following procedure.
  *   1. Execute "Show Picture" to display your button image.
- *   2. Call the plugin command "Set Button Picture".
+ *   2. Call the plugin command "Set Button Picture", or from script:
+ *        ButtonPicture.setButtonPicture(pictureId, commonEventId);
  *
  * @command set
  * @text Set Button Picture
@@ -43,11 +44,12 @@
  * @help ButtonPicture.js
  *
  * このプラグインは、ピクチャのクリック時にコモンイベントを呼び出すコマンドを
- * 提供します。
+ * 提供します。クリック時にゲーム変数 1 号にピクチャ番号を代入します。
  *
  * 次の手順で使用してください。
  *   1. 「ピクチャの表示」を実行して、ボタン画像を表示します。
- *   2. プラグインコマンド「ボタンピクチャの設定」を呼び出します。
+ *   2. プラグインコマンド「ボタンピクチャの設定」を呼び出すか、スクリプトで
+ *        ButtonPicture.setButtonPicture(ピクチャ番号, コモンイベントID);
  *
  * @command set
  * @text ボタンピクチャの設定
@@ -70,15 +72,25 @@
 
 (() => {
     const pluginName = "ButtonPicture";
+    const CLICKED_PICTURE_VARIABLE_ID = 1;
+
+    function setButtonPicture(pictureId, commonEventId) {
+        const picture = $gameScreen.picture(Number(pictureId));
+        if (picture) {
+            picture.mzkp_commonEventId = Number(commonEventId);
+            return true;
+        }
+        return false;
+    }
 
     PluginManager.registerCommand(pluginName, "set", args => {
-        const pictureId = Number(args.pictureId);
-        const commonEventId = Number(args.commonEventId);
-        const picture = $gameScreen.picture(pictureId);
-        if (picture) {
-            picture.mzkp_commonEventId = commonEventId;
-        }
+        setButtonPicture(args.pictureId, args.commonEventId);
     });
+
+    globalThis.ButtonPicture = globalThis.ButtonPicture || {};
+    globalThis.ButtonPicture.setButtonPicture = setButtonPicture;
+    globalThis.ButtonPicture.clickedPictureVariableId =
+        CLICKED_PICTURE_VARIABLE_ID;
 
     Sprite_Picture.prototype.isClickEnabled = function() {
         const picture = this.picture();
@@ -86,7 +98,12 @@
     };
 
     Sprite_Picture.prototype.onClick = function() {
-        $gameTemp.reserveCommonEvent(this.picture().mzkp_commonEventId);
+        const picture = this.picture();
+        if (!picture || !picture.mzkp_commonEventId) {
+            return;
+        }
+        $gameVariables.setValue(CLICKED_PICTURE_VARIABLE_ID, this._pictureId);
+        $gameTemp.reserveCommonEvent(picture.mzkp_commonEventId);
     };
 
     Spriteset_Base.prototype.mzkp_isAnyPicturePressed = function() {

@@ -2697,6 +2697,7 @@ BattleManager.updateTpbBattler = function(battler) {
 BattleManager.checkTpbTurnEnd = function() {
     if ($gameTroop.isTpbTurnEnd()) {
         this.endTurn();
+        console.log("Tpb turn end");
     }
 };
 
@@ -2831,6 +2832,7 @@ BattleManager.invokeNormalAction = function(subject, target) {
     const realTarget = this.applySubstitute(target);
     this._action.apply(realTarget);
     this._logWindow.displayActionResults(subject, realTarget);
+    console.log("行动结束", subject, target, realTarget);
 };
 
 BattleManager.invokeCounterAttack = function(subject, target) {
